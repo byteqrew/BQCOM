@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "BandhanUSA",
+    "slug": "bandhanusa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FDF6F0"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.bandhanusa.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "BandhanUSA needs access to your photos so you can upload profile pictures.",
+        "NSCameraUsageDescription": "BandhanUSA needs camera access to take profile photos."
+      }
+    },
+    "android": {
+      "package": "com.bandhanusa.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FDF6F0"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "BandhanUSA needs access to your photos so you can upload profile pictures."
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
